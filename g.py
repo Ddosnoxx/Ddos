@@ -5,14 +5,14 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 import certifi
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-TOKEN = '7500366284:AAG8DF9FOZUyi1DCagFg4b0ypIDaJaToBTM'
-MONGO_URI = 'mongodb+srv://Bishal:Bishal@bishal.dffybpx.mongodb.net/?retryWrites=true&w=majority&appName=Bishal'
-CHANNEL_ID = -1002150195409
-ADMIN_IDS = [1051815609, 1234567890, 2345678901, 3456789012, 4567890123]
+TOKEN = '7445483279:AAFanm0HtfHBq0SJRsi_TZwPI7ALnoVMh08'
+MONGO_URI = 'mongodb+srv://nox:nox@nox.0erqdpv.mongodb.net/?retryWrites=true&w=majority'
+CHANNEL_ID = -1002219865677
+ADMIN_IDS = [5154912723]
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
-db = client['zoya']
+db = client['soul']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
